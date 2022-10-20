@@ -7,11 +7,19 @@
     <title>Formulario de Cadastro</title>
 </head>
 <body>
-    <form name="singup" method="POST" action="https://meusite.com.br/signup">
-       <label>Nome: <input type="text" name="name" /><br></label> 
-       <label>Data Nascimento:  <input type="date" date="date" /><br></label>
-       <label>Senha: <input type="password" name="password" /><br></label> 
-       <label>Email: <input type="email" name="email" /><br></label>
+    <form onsubmit="" method="get">
+       <label>Nome*: <input type="text" name="name" /><br></label> 
+       <label>Data Nascimento*:  <input type="date" date="date" /><br></label>
+       <label>Email*: <input type="email" name="email" /><br></label>
+       <label>Senha*: <input type="password" name="password" /><br></label> 
+       <label>Cargo</label><select name="role">
+            <option value="">Selecione o cargo</option>
+            <option value="administrativo">Administrativo</option>
+            <option value="tecnologia">Tecnologia</option>
+            <option value="producao">Producao</option>
+            <option value="alimenticio">alimenticio</option>
+            </select>
+            <br>
         <button type="submit">Enviar</button>
     </form>
 </body>
